@@ -1,4 +1,4 @@
-import {UserDTO} from "../modules/users/UserDto";
+import {UserDTO} from "../api/users/UserDto";
 import Papa from "papaparse";
 import fs from "fs";
 

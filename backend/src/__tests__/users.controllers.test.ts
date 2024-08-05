@@ -1,5 +1,5 @@
-import {UsersController} from "../modules/users/UsersControllers";
-import {UsersServices} from '../modules/users/UsersServices';
+import {UsersController} from "../api/users/UsersControllers";
+import {UsersServices} from '../api/users/UsersServices';
 import {describe, expect, it, beforeEach} from '@jest/globals';
 import httpMocks from 'node-mocks-http';
 

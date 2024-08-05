@@ -1,6 +1,6 @@
 import {beforeEach, describe, expect, it} from "@jest/globals";
-import {UsersServices} from "../modules/users/UsersServices";
-import {UserDTO} from "../modules/users/UserDto";
+import {UsersServices} from "../api/users/UsersServices";
+import {UserDTO} from "../api/users/UserDto";
 
 const mockUsers: UserDTO[] = [
     {

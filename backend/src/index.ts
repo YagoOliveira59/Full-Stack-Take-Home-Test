@@ -1,6 +1,6 @@
 import express, {Response} from 'express';
-import userRoutes from './modules/users/UsersRoutes';
-import filesRoutes from './modules/files/FilesRoutes';
+import userRoutes from './api/users/UsersRoutes';
+import filesRoutes from './api/files/FilesRoutes';
 import cors from 'cors';
 
 import "reflect-metadata"

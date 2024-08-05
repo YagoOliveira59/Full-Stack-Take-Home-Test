@@ -1,7 +1,7 @@
 import {beforeEach, describe, expect, it} from "@jest/globals";
-import {FilesServices} from "../modules/files/FilesServices";
+import {FilesServices} from "../api/files/FilesServices";
 import {FileParser} from "../libraries/csv-parser";
-import {UserDTO} from "../modules/users/UserDto";
+import {UserDTO} from "../api/users/UserDto";
 
 describe('FilesServices', () => {
     let filesServices: FilesServices;

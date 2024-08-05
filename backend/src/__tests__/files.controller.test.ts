@@ -1,6 +1,6 @@
-import {FilesController} from '../modules/files/FilesControllers';
-import {FilesServices} from '../modules/files/FilesServices';
-import {UsersServices} from '../modules/users/UsersServices';
+import {FilesController} from '../api/files/FilesControllers';
+import {FilesServices} from '../api/files/FilesServices';
+import {UsersServices} from '../api/users/UsersServices';
 import {describe, expect, it, beforeEach} from '@jest/globals';
 import httpMocks from 'node-mocks-http';
 
