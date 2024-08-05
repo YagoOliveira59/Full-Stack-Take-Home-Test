@@ -12,6 +12,8 @@ export const UserProvider = ({children}: Props) => {
     const [error, setError] = useState("");
     const [hasQuery, setHasQuery] = useState(false);
 
+    const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
     const handleSetMessage = async (response: any, sucess: boolean) => {
         if (sucess) return 'File uploaded successfully'
         const parsedResponse = await response.json();
@@ -21,7 +23,7 @@ export const UserProvider = ({children}: Props) => {
 
     const fetchUsers = async (query: string) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/users?q=${query}`).then((res) => res.json());
+            const response = await fetch(`${API_URL}/api/users?q=${query}`).then((res) => res.json());
             setUsers(response.data);
         } catch (err: any) {
             setError(err.message);
@@ -34,7 +36,7 @@ export const UserProvider = ({children}: Props) => {
         formData.append('file', file);
 
         try {
-            const response = await fetch('http://localhost:3000/api/files', {
+            const response = await fetch(`${API_URL}/api/files`, {
                 method: 'POST',
                 body: formData,
             })
