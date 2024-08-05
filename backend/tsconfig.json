@@ -1,0 +1,33 @@
+{
+  "extends": "ts-node/node16/tsconfig.json",
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "lib": ["ES2023", "DOM"],
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true
+    }
+  },
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "lib": ["ES2023", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  }
+}
