@@ -37,7 +37,7 @@
     "node-mocks-http": "^1.15.1",
     "papaparse": "^5.4.1",
     "reflect-metadata": "^0.2.2",
-    "sqlite3": "^5.1.7",
+    "sqlite3": "^6.0.1",
     "supertest": "^7.0.0",
     "typeorm": "^0.3.20"
   },
